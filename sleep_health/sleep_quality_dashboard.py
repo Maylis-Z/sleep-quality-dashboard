@@ -251,7 +251,7 @@ PAL = ["#4f6ef7", "#7c9cff", "#34d399", "#2563eb", "#fbbf24", "#60a5fa"]
 # ─────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/Sleep_health_and_lifestyle_dataset.csv")
+    df = pd.read_csv("sleep_health/data/Sleep_health_and_lifestyle_dataset.csv")
     df["Sleep Disorder"] = df["Sleep Disorder"].fillna("None")
     return df
 
